@@ -53,7 +53,7 @@ Maintains real-time platform tracking logs for top-performing items using an API
 
 1. **Clone the Repository:**
    ```bash
-   it git clone [https://github.com/GITHUB_NAME/machine_learning_assg_2.git](https://github.com/GITHUB_NAME/machine_learning_assg_2.git)
+   git clone [https://github.com/GITHUB_NAME/machine_learning_assg_2.git](https://github.com/GITHUB_NAME/machine_learning_assg_2.git)
 
 2. Install Project Dependencies:
    pip install -r requirements.txt
