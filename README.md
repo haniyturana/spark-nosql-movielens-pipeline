@@ -1,1 +1,63 @@
-# spark-nosql-movielens-pipeline
+# MovieLens 100k: Hybrid Cloud Big Data Analytics Pipeline
+
+A comprehensive Big Data engineering and analytics pipeline leveraging the distributed compute capabilities of **Apache Spark 4.0.3** integrated with a dual **NoSQL Cloud Data Persistence** layer (**MongoDB Atlas** & **DataStax Astra DB / Cassandra**).
+
+This project simulates a real-world enterprise data architecture, processing over 100,000 system rating transactions across 943 users and 1,682 movies.
+
+---
+
+## System Architecture & Stack
+
+The data infrastructure is engineered for scalable distributed processing and low-latency analytics:
+
+- **Compute Engine:** Apache Spark 4.0.3 (PySpark Classic DataFrame & RDD APIs)
+- **Language Runtime:** Python 3.12.13
+- **Document NoSQL Storage:** MongoDB Atlas Cloud (via native PyMongo driver)
+- **Wide-Column NoSQL Storage:** DataStax Astra DB Cloud Cassandra (via REST Data API)
+- **Analytics & Visualization:** Plotly Express, Pandas, pgeocode, Seaborn
+
+---
+
+## Project Objectives
+
+1. **Top-Tier Content Performance:** Identify the top 10 highest-rated movies (min. 20 ratings) and conduct deep-dive demographic profiling (gender, age, occupation, timelines, and geospatial footprints).
+2. **User Segmentation Modeling:** Isolate power users ($\ge$ 50 reviews) and mathematically extract their ultimate favorite genre using distributed window functions.
+3. **Multi-Engine Cloud Ingestion:** Implement an idempotent ETL egress mechanism to route transactional intelligence into optimal hybrid NoSQL cloud clusters.
+
+---
+
+## Core Insights & Data Discoveries
+
+### 1. Demographic & Temporal Behavioral Profiles
+* **The Student Monopoly:** Users under 20 are almost completely homogenous, with students representing **64 out of 77 total active users**, showing that teen tracking is heavily tied to academic cycles.
+* **The Nighttime Binge-Watching Culture:** Users under 20 capture an absolute traffic monopoly during **Night/Late Night windows (9 PM – 5 AM)**, accounting for **55.8%** of total system activities. Conversely, **Afternoon (12 PM – 5 PM)** drops to its lowest at **6.15%**, reflecting active school or lecture hours.
+* **Geospatial Concentration:** Choropleth mapping shows demand is highly concentrated in specific coastal and midwestern tech hubs, with **California (CA)** leading national viewership numbers, followed by **Minnesota (MN)** due to native academic dataset origins.
+
+### 2. Temporal Macro Trends
+* **November 1997 Operational Spike:** A massive, anomalous ingestion event occurred in November 1997, peaking at nearly **24,000 reviews** (2x–3x higher than any surrounding month). This suggests a historical database injection or major marketing campaign.
+* **January Sentiment Reset:** Every post-holiday January window (e.g., Jan 1998) shows a distinct dip in user sentiment down to a **3.40 average rating baseline**, revealing a cyclical pattern where users apply stricter evaluation habits at the start of the new year.
+
+---
+
+## NoSQL Cloud Integration Implementation
+
+### A. Document Storage: MongoDB Atlas Cloud
+Processes and stores long-term power-user profile metrics (`user_id`, `genre`, `frequency`). It uses a bulk write operation combined with an automatic document refresh strategy to serve real-time dashboard applications.
+
+### B. Columnar Storage: DataStax Astra DB / Cassandra Cloud
+Maintains real-time platform tracking logs for top-performing items using an API-driven environment setup. By mapping the business domain `movie_id` to the specialized document `_id` key, it eliminates randomized text string hashes and ensures rapid indexing.
+
+---
+
+## How to Run Local Cluster Session
+
+1. **Clone the Repository:**
+   ```bash
+   it git clone [https://github.com/GITHUB_NAME/machine_learning_assg_2.git](https://github.com/GITHUB_NAME/machine_learning_assg_2.git)
+
+2. Install Project Dependencies:
+   pip install -r requirements.txt
+
+3. Execution Sequence:
+   Open and execute the production file inside Jupyter or Google Colab:
+   notebooks/Movielense_ML100k_HaniyTurana.ipynb
