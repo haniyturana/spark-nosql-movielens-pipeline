@@ -1,6 +1,6 @@
 # MovieLens 100k: Hybrid Cloud Big Data Analytics Pipeline
 
-A comprehensive Big Data engineering and analytics pipeline leveraging the distributed compute capabilities of **Apache Spark 4.0.3** integrated with a dual **NoSQL Cloud Data Persistence** layer (**MongoDB Atlas** & **DataStax Astra DB / Cassandra**).
+A comprehensive Big Data engineering and analytics pipeline leveraging the distributed compute capabilities of **Apache Spark 4.0.3** integrated with a dual **NoSQL Cloud Data** layer (**MongoDB Atlas** & **DataStax Astra DB / Cassandra**).
 
 This project simulates a real-world enterprise data architecture, processing over 100,000 system rating transactions across 943 users and 1,682 movies.
 
