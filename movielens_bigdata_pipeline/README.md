@@ -49,7 +49,7 @@ Maintains real-time platform tracking logs for top-performing items using an API
 
 ---
 
-## 🚀 How to Run Local Cluster Session
+## How to Run Local Cluster Session
 
 1. **Clone the Repository:**
    ```bash
