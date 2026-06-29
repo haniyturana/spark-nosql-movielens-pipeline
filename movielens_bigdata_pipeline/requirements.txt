@@ -1,8 +1,0 @@
-pyspark==4.0.3
-pymongo==4.17.0
-pandas
-plotly
-matplotlib
-seaborn
-requests
-pgeocode
