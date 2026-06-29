@@ -2,19 +2,26 @@
 
 A comprehensive Big Data engineering and analytics pipeline leveraging the distributed compute capabilities of **Apache Spark 4.0.3** integrated with a dual **NoSQL Cloud Data** layer (**MongoDB Atlas** & **DataStax Astra DB / Cassandra**).
 
-This project simulates a real-world enterprise data architecture, processing over 100,000 system rating transactions across 943 users and 1,682 movies.
+This project processes over 100,000 system rating transactions across 943 users and 1,682 movies to model a production-ready enterprise data infrastructure.
+
+---
+
+## 🔗 Live Interactive Dashboard
+The data engineering pipeline results have been converted into a production-grade interactive dashboard and deployed live in the cloud. You can explore the filtered metrics, user segments, and NoSQL payloads directly:
+
+👉 **[Launch Production Analytics Dashboard](https://spark-nosql-movielens-pipeline-8bqtkcs3m7uoie6nmjs4hm.streamlit.app/)**
 
 ---
 
 ## System Architecture & Stack
 
-The data infrastructure is engineered for scalable distributed processing and low-latency analytics:
+The infrastructure is engineered for scalable distributed ETL processing and low-latency analytics:
 
 - **Compute Engine:** Apache Spark 4.0.3 (PySpark Classic DataFrame & RDD APIs)
 - **Language Runtime:** Python 3.12.13
 - **Document NoSQL Storage:** MongoDB Atlas Cloud (via native PyMongo driver)
 - **Wide-Column NoSQL Storage:** DataStax Astra DB Cloud Cassandra (via REST Data API)
-- **Analytics & Visualization:** Plotly Express, Pandas, pgeocode, Seaborn
+- **Analytics & Web App:** Streamlit, Pandas, Plotly Express, pgeocode, Seaborn
 
 ---
 
@@ -49,15 +56,17 @@ Maintains real-time platform tracking logs for top-performing items using an API
 
 ---
 
-## How to Run Local Cluster Session
+## How to Run Sessions
+
+### Option 1: Open the Interactive Web Application
+Skip local environment configurations by exploring the web interface directly on the Streamlit Cloud network:
+- **Production Link:** [https://spark-nosql-movielens-pipeline-8bqtkcs3m7uoie6nmjs4hm.streamlit.app/](https://spark-nosql-movielens-pipeline-8bqtkcs3m7uoie6nmjs4hm.streamlit.app/)
+
+### Option 2: Local Repository Execution Sequence
+
+For developers looking to download, inspect, and host the cluster configurations locally:
 
 1. **Clone the Repository:**
    ```bash
-   git clone [https://github.com/GITHUB_NAME/machine_learning_assg_2.git](https://github.com/GITHUB_NAME/machine_learning_assg_2.git)
-
-2. Install Project Dependencies:
-   pip install -r requirements.txt
-
-3. Execution Sequence:
-   Open and execute the production file inside Jupyter or Google Colab:
-   notebooks/Movielense_ML100k_HaniyTurana.ipynb
+   git clone [https://github.com/haniyturana/spark-nosql-movielens-pipeline.git](https://github.com/haniyturana/spark-nosql-movielens-pipeline.git)
+   cd spark-nosql-movielens-pipeline
