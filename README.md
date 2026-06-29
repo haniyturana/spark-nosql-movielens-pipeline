@@ -60,8 +60,8 @@ Maintains real-time platform tracking logs for top-performing items using an API
 
 ### Option 1: Open the Interactive Web Application
 Skip local environment configurations by exploring the web interface directly on the Streamlit Cloud network:
-- **Production Link:** [https://spark-nosql-movielens-pipeline-8bqtkcs3m7uoie6nmjs4hm.streamlit.app/](https://spark-nosql-movielens-pipeline-8bqtkcs3m7uoie6nmjs4hm.streamlit.app/)
-
+- **Production Link:** [https://tinyurl.com/mwprkfhx/](https://tinyurl.com/mwprkfhx/)
+  
 ### Option 2: Local Repository Execution Sequence
 
 For developers looking to download, inspect, and host the cluster configurations locally:
