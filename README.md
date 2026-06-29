@@ -9,7 +9,7 @@ This project processes over 100,000 system rating transactions across 943 users 
 ## 🔗 Live Interactive Dashboard
 The data engineering pipeline results have been converted into a production-grade interactive dashboard and deployed live in the cloud. You can explore the filtered metrics, user segments, and NoSQL payloads directly:
 
-👉 **[Launch Production Analytics Dashboard](https://spark-nosql-movielens-pipeline-8bqtkcs3m7uoie6nmjs4hm.streamlit.app/)**
+👉 **[Launch Production Analytics Dashboard]([https://spark-nosql-movielens-pipeline-8bqtkcs3m7uoie6nmjs4hm.streamlit.app/](https://sl1nk.com/5ms2tyy)**
 
 ---
 
